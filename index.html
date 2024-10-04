@@ -109,7 +109,7 @@
                   >
                     <h2>Research</h2>
                     <p>
-                      I'm interested in Multi-Agent and multi-robot systems.
+                      I'm interested in multi-agent and multi-robot systems.
                       Specifically, how collabration is formed between agents
                       and how to effectively train collabrative agents or
                       robots.
@@ -128,6 +128,70 @@
                 margin-left: auto;
               "
             >
+            <tbody>
+              <tr onmouseout="HUMAC_stop()" onmouseover="HUMAC_start()">
+                <td style="padding: 20px; width: 25%; vertical-align: middle">
+                  <div class="one">
+                    <div class="two" id="humac_image"></div>
+                    <img src="images/HUMAC.jpg" width="100%" />
+                  </div>
+                  <script type="text/javascript">
+                    function HUMAC_start() {
+                      document.getElementById("humac_image").style.opacity =
+                        "1";
+                    }
+
+                    function crew_stop() {
+                      document.getElementById("humac_image").style.opacity =
+                        "0";
+                    }
+                    smerf_stop();
+                  </script>
+                </td>
+                <td style="padding: 20px; width: 75%; vertical-align: middle">
+                  <a
+                    href="http://www.generalroboticslab.com/blogs/blog/2024-09-29-humac/index.html"
+                  >
+                    <span class="papertitle"
+                      >HUMAC: Enabling Multi-Robot Collaboration from Single-Human Guidance</span
+                    >
+                  </a>
+                  <br />
+                  <strong>Zhengran Ji</strong>,
+                  <a href="https://lingyu98.github.io/">Lingyu Zhang</a>,
+                  <a href="https://liinc.bme.columbia.edu/people/paul-sajda">Paul Sajda</a>,
+                  <a href="http://boyuanchen.com/">Boyuan Chen</a>,
+                  <br />
+                  <em>arXiv</em>, 2024
+                  <br />
+                  <a href="https://arxiv.org/abs/2409.19831">paper</a>
+                  /
+                  <a href="https://www.youtube.com/watch?v=2X92LnFTutY"
+                    >video</a
+                  >
+                  /
+                  <a href="https://github.com/generalroboticslab/HUMAC"
+                    >code</a
+                  >
+                  /
+                  <a
+                    href="http://www.generalroboticslab.com/blogs/blog/2024-09-29-humac/index.html"
+                    >website</a
+                  >
+                  <p></p>
+                  <p>
+                    We introduce HUMAC, a novel framework that enables
+                    multi-robot collaboration from single-human guidance. HUMAC
+                    leverages a novel human-robot interface that allows a single
+                    human to guide multiple robots simultaneously. We
+                    demonstrate the effectiveness of HUMAC in a variety of
+                    multi-robot tasks, including search and rescue, object
+                    retrieval, and multi-robot formation control.
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+
               <tbody>
                 <tr onmouseout="crew_stop()" onmouseover="crew_start()">
                   <td style="padding: 20px; width: 25%; vertical-align: middle">
