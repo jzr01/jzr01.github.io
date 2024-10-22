@@ -129,6 +129,64 @@
               "
             >
             <tbody>
+              <tr onmouseout="GUIDE_stop()" onmouseover="GUIDE_start()">
+                <td style="padding: 20px; width: 25%; vertical-align: middle">
+                  <div class="one">
+                    <div class="two" id="guide_image"></div>
+                    <img src="images/GUIDE.jpg" width="100%" />
+                  </div>
+                  <script type="text/javascript">
+                    function GUIDE_start() {
+                      document.getElementById("guide_image").style.opacity =
+                        "1";
+                    }
+
+                    function crew_stop() {
+                      document.getElementById("guide_image").style.opacity =
+                        "0";
+                    }
+                    smerf_stop();
+                  </script>
+                </td>
+                <td style="padding: 20px; width: 75%; vertical-align: middle">
+                  <a
+                    href="http://www.generalroboticslab.com/blogs/blog/2024-10-21-guide/index.html"
+                  >
+                    <span class="papertitle"
+                      >GUIDE: Real-Time Human-Shaped Agents</span
+                    >
+                  </a>
+                  <br />
+                  <a href="https://lingyu98.github.io/">Lingyu Zhang</a>,
+                  <strong>Zhengran Ji</strong>,
+                  <a href="https://nicholaswaytowich.com/">Nicholas R Waytowich</a>,
+                  <a href="http://boyuanchen.com/">Boyuan Chen</a>,
+                  <br />
+                  <strong><em>Neural Information Processing Systems (NeurIPS 2024)</em></strong>
+                  <br />
+                  <a href="https://arxiv.org/abs/2410.15181">paper</a>
+                  /
+                  <a href="https://www.youtube.com/watch?v=sMlvE9wYxj0&feature=youtu.be"
+                    >video</a
+                  >
+                  /
+                  <a href="https://github.com/generalroboticslab/CREW/blob/main/crew-algorithms/README.md"
+                    >code</a
+                  >
+                  /
+                  <a
+                    href="http://www.generalroboticslab.com/blogs/blog/2024-10-21-guide/index.html"
+                    >website</a
+                  >
+                  <p></p>
+                  <p>
+                    We introduce GUIDE, a framework for real-time human-guided reinforcement learning that accelerates policy learning by integrating continuous human feedback into dense rewards. GUIDE also features a simulated feedback module that learns human feedback patterns, reducing the need for human input while enabling ongoing training. Tested on tasks with sparse rewards and visual observations, GUIDE achieves a 30% higher success rate with just 10 minutes of human feedback compared to standard RL methods. Our human study with 50 participants highlights the effectiveness of our approach.
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+
+            <tbody>
               <tr onmouseout="HUMAC_stop()" onmouseover="HUMAC_start()">
                 <td style="padding: 20px; width: 25%; vertical-align: middle">
                   <div class="one">
