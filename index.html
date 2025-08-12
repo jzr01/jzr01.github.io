@@ -126,6 +126,66 @@
                 margin-left: auto;
               "
             >
+              <tbody>
+                <tr onmouseout="Pref_GUIDE_stop()" onmouseover="Pref_GUIDE_start()">
+                  <td style="padding: 20px; width: 25%; vertical-align: middle">
+                    <div class="one">
+                      <div class="two" id="pref_guide_image"></div>
+                      <img src="images/Pref-GUIDE.jpg" width="100%" />
+                    </div>
+                    <script type="text/javascript">
+                      function Pref_GUIDE_start() {
+                        document.getElementById("pref_guide_image").style.opacity =
+                          "1";
+                      }
+
+                      function Pref_GUIDE_stop() {
+                        document.getElementById("pref_guide_image").style.opacity =
+                          "0";
+                      }
+                      smerf_stop();
+                    </script>
+                  </td>
+                  <td style="padding: 20px; width: 75%; vertical-align: middle">
+                    <a
+                      href="http://www.generalroboticslab.com/blogs/blog/2025-08-12-pref-guide/index.html"
+                    >
+                      <span class="papertitle"
+                        >HUMAC: Enabling Multi-Robot Collaboration from Single-Human Guidance</span
+                      >
+                    </a>
+                    <br />
+                    <strong>Zhengran Ji</strong>,
+                    <a href="http://boyuanchen.com/">Boyuan Chen</a>,
+                    <br />
+                    <strong><em>arxiv</em></strong>
+                    <br />
+                    <a href="https://arxiv.org/abs/2507.05178">paper</a>
+                    /
+                    <a href="https://www.youtube.com/watch?v=r9Cd7eEdLWE"
+                      >video</a
+                    >
+                    /
+                    <a href="https://github.com/generalroboticslab/Pref-GUIDE"
+                      >code</a
+                    >
+                    /
+                    <a
+                      href="http://www.generalroboticslab.com/blogs/blog/2025-08-12-pref-guide/index.html"
+                      >website</a
+                    >
+                    <p></p>
+                    <p>
+                      We introduce Pref-GUIDE, a novel method that convert real-time human feedback 
+                      into preference dataset for continual training after human left the loop. Pref-GUIDE 
+                      further leverages the population power by aggregating feedback from multiple evaluators
+                      through voting to generate soft-label preference dataset to train more robust reward models.
+
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            
             
               <tbody>
                 <tr onmouseout="HUMAC_stop()" onmouseover="HUMAC_start()">
