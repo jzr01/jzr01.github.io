@@ -127,6 +127,66 @@
               "
             >
               <tbody>
+                <tr onmouseout="ORCH_stop()" onmouseover="ORCH_start()">
+                  <td style="padding: 20px; width: 25%; vertical-align: middle">
+                    <div class="one">
+                      <div class="two" id="pref_guide_image"></div>
+                      <img src="images/ORCH.jpg" width="100%" />
+                    </div>
+                    <script type="text/javascript">
+                      function ORCH_start() {
+                        document.getElementById("ORCH_image").style.opacity =
+                          "1";
+                      }
+
+                      function ORCH_stop() {
+                        document.getElementById("ORCH_image").style.opacity =
+                          "0";
+                      }
+                      smerf_stop();
+                    </script>
+                  </td>
+                  <td style="padding: 20px; width: 75%; vertical-align: middle">
+                    <a
+                      href="http://www.generalroboticslab.com/blogs/blog/2025-08-12-pref-guide/index.html"
+                    >
+                      <span class="papertitle"
+                        >Pref-GUIDE: Continual Policy Learning from Real-Time Human Feedback via Preference-Based Learning</span
+                      >
+                    </a>
+                    <br />
+                    <strong>Zhengran Ji</strong>,
+                    <a>Jonathan Hyun</a>,
+                    <a href="http://boyuanchen.com/">Boyuan Chen</a>
+                    <br />
+                    <strong><em>Preprint</em></strong>
+                    <br />
+                    <a href="https://arxiv.org/abs/2508.07126">paper</a>
+                    /
+                    <a href="https://www.youtube.com/watch?v=r9Cd7eEdLWE"
+                      >video</a
+                    >
+                    /
+                    <a href="https://github.com/generalroboticslab/ORCH"
+                      >code</a
+                    >
+                    /
+                    <a
+                      href="https://generalroboticslab.com/ORCH"
+                      >website</a
+                    >
+                    <p></p>
+                    <p>
+                      Collective intelligence depends not only on the capabilities of individual members, but also on how those members are organized. Yet artificial multi-agent systems are typically assembled using fixed organizational structures, even when the physical tasks they perform impose fundamentally different coordination requirements. Here we show that principles from human organization theory can be operationalized to organize large, heterogeneous collectives of embodied artificial agents. We introduce ORCH (Organizing Roles and Coordination Hierarchies), which constructs task-specific hierarchical organizations by combining pooled interdependence for work that can proceed concurrently with sequential interdependence for work governed by prerequisite relationships. Across 25 wildfire-response missions spanning reconnaissance, rescue, transportation, resource management, containment and suppression, we evaluated teams of up to 50 heterogeneous agents using eight large language models. Organizations constructed using these principles consistently outperformed four representative embodied multi-agent approaches across mission outcome, execution efficiency, exploration and computational resource use. Human-designed ORCH organizations improved final score by 63.97% and execution efficiency by 74.29% on average relative to the four prior frameworks. Organizations generated automatically by language models improved these measures by 43.63% and 52.53%, respectively. These advantages persisted across missions and underlying language models. Notably, collective performance was not monotonically determined by model scale. Analysis of long-horizon missions showed that hierarchical organization enabled teams to preserve concurrent activity within specialized groups while coordinating ordered transitions between mission phases. These results establish organizational design as a fundamental dimension of artificial collective intelligence and suggest that principles developed to understand human organizations can guide the construction of scalable embodied AI collectives.
+
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            
+
+
+              <tbody>
                 <tr onmouseout="Pref_GUIDE_stop()" onmouseover="Pref_GUIDE_start()">
                   <td style="padding: 20px; width: 25%; vertical-align: middle">
                     <div class="one">
